@@ -1,0 +1,119 @@
+body{
+  background-color: #f4ebd3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container {
+  background:#98A1BC;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  max-width: 100%;
+
+}
+h1{
+ text-align: center;
+ margin-bottom: 50px;
+ color: #555879;
+
+}
+h1 {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+#taskinput{
+   border-radius: 5px;
+   background-color: #f4ebd3;
+}
+#btn{
+  border-radius: 5px;
+ background-color: #555879;
+ color: #f4ebd3;
+ cursor: pointer;
+
+}
+#btn:hover{
+  background-color: #f4ebd3;
+  color: #555879;
+}
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task {
+  background-color: #f4ebd3;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.task:hover {
+  background-color: #555879;
+}
+
+.task.done {
+  text-decoration: line-through;
+  color: #555879;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+@media (max-width: 480px) {
+ body{
+  font-size: 16px;
+ }
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delete-btn {
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+}
+
