@@ -17,9 +17,11 @@ function addtask() {
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
   deleteBtn.className = "delete-btn";
+    deleteBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
     taskList.removeChild(li);
-  ;
-
+  });
+   
   li.appendChild(deleteBtn);
   taskList.appendChild(li);
 
